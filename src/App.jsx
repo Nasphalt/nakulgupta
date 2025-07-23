@@ -1,8 +1,8 @@
 import "./App.css";
-import MainHeader from "./Components/MainHeader";
-import ContentSection from "./Components/ContentSection";
-import AboutMe from "./Components/AboutMe";
-import WorkExperience from "./Components/WorkExperience";
+import MainHeader from "./Components/Header/MainHeader";
+import ContentSection from "./Components/Sections/ContentSection";
+import AboutMe from "./Components/Sections/AboutMe";
+import WorkExperience from "./Components/Sections/WorkExperience/WorkExperience";
 
 function App() {
   return (

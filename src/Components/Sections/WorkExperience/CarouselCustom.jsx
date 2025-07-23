@@ -24,7 +24,6 @@ export default function CarouselCustom({
     setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1));
   };
 
-  // Auto-slide effect
   useEffect(() => {
     if (!autoSlide) return;
     const slideInterval = setInterval(() => {
@@ -33,7 +32,6 @@ export default function CarouselCustom({
     return () => clearInterval(slideInterval);
   }, [autoSlide, autoSlideInterval, slides.length]);
 
-  // Swipe handlers
   const handleTouchStart = (e) => {
     if (e.target.closest("button")) isSwiped = false;
     else isSwiped = true;
