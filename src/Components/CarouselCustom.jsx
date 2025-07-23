@@ -76,7 +76,7 @@ export default function CarouselCustom({
           : null}
       </div>
 
-      <div className="absolute inset-0 flex items-center justify-between p-8">
+      <div className="absolute inset-0 flex items-center justify-between p-6">
         <button
           onClick={() => prev()}
           aria-label="Previous Slide"

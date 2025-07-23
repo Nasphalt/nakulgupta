@@ -1,6 +1,7 @@
 import { useState } from "react";
 import CarouselCustom from "./CarouselCustom";
 import Oracle from "./Oracle";
+import TimelineChart from "./TimelineChart";
 
 export function TabPanel() {
   const data = [
@@ -47,7 +48,9 @@ export function TabPanel() {
                 src={image}
                 alt={label}
                 className={`h-full w-full object-scale-down ${
-                  activeTab === id ? "opacity-100" : "opacity-50"
+                  activeTab === id
+                    ? "opacity-100 drop-shadow-lg drop-shadow-[#FFA500]/75"
+                    : "opacity-40"
                 }`}
               />
             </a>
@@ -56,7 +59,19 @@ export function TabPanel() {
       </ul>
       <div className="w-full">
         <CarouselCustom autoSlide={false}>
-          {[<Oracle />, <div>Object 2</div>, <div>Object 3</div>]}
+          {[
+            <Oracle />,
+            <div>
+              <div>
+                <h2 className="text-lg font-bold mb-2">Career Path</h2>
+                <p className="text-gray-300 mb-4 text-sm">
+                  A brief overview of my professional journey
+                </p>
+              </div>
+              <TimelineChart />
+            </div>,
+            <div>Object 3</div>,
+          ]}
         </CarouselCustom>
       </div>
     </div>
