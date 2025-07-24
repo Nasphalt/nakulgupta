@@ -102,7 +102,7 @@ export default function CarouselCustom({
           ? slides.map((child, index) => (
               <div
                 key={index}
-                className="w-full flex-shrink-0 mr-8 h-[350px] overflow-y-auto"
+                className="w-[calc(100%-(var(--spacing)*16))] flex-shrink-0 ml-8 mr-16 h-[350px] overflow-y-auto custom-scrollbar"
               >
                 {child}
               </div>

@@ -28,10 +28,10 @@ export default function Skills({ heading, description }) {
     <div>
       <div className="mb-8">
         <h2 className="text-lg font-bold mb-2">{heading}</h2>
-        <p className="text-gray-300 mb-4 text-sm">{description}</p>
+        <p className="text-gray-300 text-sm">{description}</p>
       </div>
       {skillSet.map((skillGroup, index) => (
-        <div key={index}>
+        <div key={index} className="mt-4">
           <h3 className="font-bold mb-2 text-gray-300">{skillGroup.type}</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 p-6">
             {skillGroup.skills.map((skill, idx) => (
