@@ -61,31 +61,18 @@ export default function CarouselCustom({
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
-      <div
-        className="flex transition-transform ease-out duration-500 p-4"
-        style={{ transform: `translateX(-${curr * 100}%)` }}
-      >
-        {Array.isArray(slides)
-          ? slides.map((child, index) => (
-              <div key={index} className="w-full flex-shrink-0 mr-8">
-                {child}
-              </div>
-            ))
-          : null}
-      </div>
-
       <div className="absolute inset-0 flex items-center justify-between p-6">
         <button
           onClick={() => prev()}
           aria-label="Previous Slide"
-          className="p-1 rounded-full shadow bg-gray-600 text-white/80 hover:bg-gray-500 hover:text-white"
+          className="p-1 rounded-full shadow bg-gray-600 text-white/80 hover:bg-gray-500 hover:text-white z-10"
         >
           <FontAwesomeIcon icon={faChevronLeft} />
         </button>
         <button
           onClick={() => next()}
           aria-label="Next Slide"
-          className="p-1 rounded-full shadow bg-gray-600 text-white/80 hover:bg-gray-500 hover:text-white"
+          className="p-1 rounded-full shadow bg-gray-600 text-white/80 hover:bg-gray-500 hover:text-white z-10"
         >
           <FontAwesomeIcon icon={faChevronRight} />
         </button>
@@ -100,12 +87,27 @@ export default function CarouselCustom({
               tabIndex={0}
               onClick={() => setCurr(i)}
               onKeyDown={(e) => e.key === "Enter" && setCurr(i)}
-              className={`cursor-pointer transition-all rounded-xs ${
+              className={`cursor-pointer transition-all rounded-xs z-10 ${
                 curr === i ? "w-8 bg-white h-[4px]" : "w-4 bg-gray-400 h-[3px]"
               }`}
             />
           ))}
         </div>
+      </div>
+      <div
+        className="flex transition-transform ease-out duration-500 p-4"
+        style={{ transform: `translateX(-${curr * 100}%)` }}
+      >
+        {Array.isArray(slides)
+          ? slides.map((child, index) => (
+              <div
+                key={index}
+                className="w-full flex-shrink-0 mr-8 h-[350px] overflow-y-auto"
+              >
+                {child}
+              </div>
+            ))
+          : null}
       </div>
     </div>
   );
