@@ -2,6 +2,7 @@ import GroupIcon from "@mui/icons-material/Group";
 import LaptopMacIcon from "@mui/icons-material/LaptopMac";
 import Groups2Icon from "@mui/icons-material/Groups2";
 import TimelineChart from "./TimelineChart";
+import Skills from "./Skills";
 
 const oracleCareerPath = [
   {
@@ -27,7 +28,10 @@ export const Oracle = [
     heading={"Career Path"}
     description={"A brief overview of my professional journey at Oracle."}
   />,
-  <div>Object 2</div>,
+  <Skills
+    heading={"Technical Skills"}
+    description={"A list of my technical skills used during my time at Oracle."}
+  />,
   <div>Object 3</div>,
   <div>Object 4</div>,
 ];
