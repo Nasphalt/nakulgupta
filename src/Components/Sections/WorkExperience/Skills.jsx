@@ -1,29 +1,4 @@
-export default function Skills({ heading, description }) {
-  const skillSet = [
-    {
-      type: "Front-End Skills",
-      skills: [
-        { name: "JavaScript", icon: "/JavaScript.svg", styling: "" },
-        { name: "TypeScript", icon: "/TypeScript.svg", styling: "" },
-        { name: "HTML", icon: "/HTML.svg", styling: "p-1 bg-white" },
-        { name: "CSS", icon: "/CSS.svg", styling: "" },
-        {
-          name: "Tailwind CSS",
-          icon: "/TailwindCSS.svg",
-          styling: "",
-        },
-        { name: "ReactJS", icon: "/ReactJS.svg", styling: "" },
-      ],
-    },
-    {
-      type: "Back-End Skills",
-      skills: [
-        { name: "SQL", icon: "/SQL.svg", styling: "p-1 bg-white" },
-        { name: "Oracle SQL", icon: "/OracleSQL.svg", styling: "p-1 bg-white" },
-        { name: "Node.js", icon: "/NodeJS.svg", styling: "p-1 bg-white" },
-      ],
-    },
-  ];
+export default function Skills({ heading, description, skillSet }) {
   return (
     <div>
       <div className="mb-8">

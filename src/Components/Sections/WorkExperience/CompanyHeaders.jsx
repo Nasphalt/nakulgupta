@@ -1,6 +1,4 @@
-import { useState } from "react";
-
-export default function CompanyHeaders() {
+export default function CompanyHeaders({ activeTab, setActiveTab }) {
   const data = [
     {
       label: "ORACLE",
@@ -19,8 +17,6 @@ export default function CompanyHeaders() {
       image: "/kony.png",
     },
   ];
-
-  const [activeTab, setActiveTab] = useState(0);
 
   return (
     <ul className="flex w-full justify-evenly mb-8">
