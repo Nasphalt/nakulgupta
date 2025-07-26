@@ -20,7 +20,6 @@ const konyCareerPath = [
 export const Kony = [
   <TimelineChart
     data={konyCareerPath}
-    heading={"Career Path"}
     description={"A brief overview of my professional journey at Kony."}
   />,
   <div>Object 2</div>,

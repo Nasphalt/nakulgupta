@@ -1,8 +1,8 @@
-export default function Skills({ heading, description, skillSet }) {
+export default function Skills({ description, skillSet }) {
   return (
     <div>
       <div className="mb-8">
-        <h2 className="text-lg font-bold mb-2">{heading}</h2>
+        <h2 className="text-lg font-bold mb-2">Technical Skills</h2>
         <p className="text-gray-300 text-sm">{description}</p>
       </div>
       {skillSet.map((skillGroup, index) => (

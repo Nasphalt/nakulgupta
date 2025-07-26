@@ -21,12 +21,10 @@ const oceaneeringResponsibilities = [
 export const Oceaneering = [
   <TimelineChart
     data={oceaneeringCareerPath}
-    heading={"Career Path"}
     description={"A brief overview of my professional journey at Oceaneering."}
   />,
   <div>Object 2</div>,
   <KeyResponsibilities
-    heading={"Key Responsibilities"}
     description={"A summary of my key responsibilities at Oceaneering."}
     responsibilities={oceaneeringResponsibilities}
   />,

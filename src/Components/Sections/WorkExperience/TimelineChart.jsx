@@ -7,11 +7,11 @@ import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import Typography from "@mui/material/Typography";
 
-export default function TimelineChart({ data, heading, description }) {
+export default function TimelineChart({ data, description }) {
   return (
     <div>
       <div>
-        <h2 className="text-lg font-bold mb-2">{heading}</h2>
+        <h2 className="text-lg font-bold mb-2">Career Path</h2>
         <p className="text-gray-300 mb-4 text-sm">{description}</p>
       </div>
 

@@ -1,12 +1,8 @@
-export default function KeyResponsibilities({
-  heading,
-  description,
-  responsibilities,
-}) {
+export default function KeyResponsibilities({ description, responsibilities }) {
   return (
     <div>
       <div className="mb-8">
-        <h2 className="text-lg font-bold mb-2">{heading}</h2>
+        <h2 className="text-lg font-bold mb-2">Key Responsibilities</h2>
         <p className="text-gray-300 text-sm">{description}</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 p-6 mt-4">
