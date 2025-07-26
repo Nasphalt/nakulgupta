@@ -42,6 +42,10 @@ const oracleSkillSet = [
       },
       { name: "ReactJS", icon: "/ReactJS.svg", styling: "" },
       { name: "JQuery", icon: "/JQuery.svg", styling: "p-1 bg-white" },
+      { name: "RequireJS", icon: "/RequireJS.svg", styling: "" },
+      { name: "Jasmine", icon: "/Jasmine.svg", styling: "" },
+      { name: "Karma", icon: "/Karma.svg", styling: "" },
+      { name: "Jest", icon: "/Jest.svg", styling: "" },
     ],
   },
   {
@@ -71,11 +75,65 @@ const oracleSkillSet = [
         icon: "/VisualStudioCode.svg",
         styling: "",
       },
+      { name: "TeamCity", icon: "/TeamCity.svg", styling: "" },
+      { name: "SonarQube", icon: "/SonarQube.svg", styling: "" },
     ],
   },
 ];
 
 const oracleProjects = [
+  {
+    name: "Supply 360",
+    description: "Get an overview report of all the supplies.",
+  },
+  {
+    name: "Item 360",
+    description: "Get an overview report of all the supplies.",
+  },
+  {
+    name: "Work Instructions & Travelers",
+    description: "Get an overview report of all the supplies.",
+  },
+  {
+    name: "FEFO",
+    description: "Get an overview report of all the supplies.",
+  },
+  {
+    name: "Order Guides",
+    description: "Get an overview report of all the supplies.",
+  },
+  {
+    name: "Auto Close Back Orders",
+    description: "Get an overview report of all the supplies.",
+  },
+  {
+    name: "Allergen Statements",
+    description: "Get an overview report of all the supplies.",
+  },
+  {
+    name: "Costed BOM",
+    description: "Get an overview report of all the supplies.",
+  },
+  {
+    name: "Cost Variance Analysis",
+    description: "Get an overview report of all the supplies.",
+  },
+  {
+    name: "Auto Lot Numbering",
+    description: "Get an overview report of all the supplies.",
+  },
+  {
+    name: "Lot Trace",
+    description: "Get an overview report of all the supplies.",
+  },
+  {
+    name: "Route Delivery",
+    description: "Get an overview report of all the supplies.",
+  },
+  {
+    name: "Supply 360",
+    description: "Get an overview report of all the supplies.",
+  },
   {
     name: "Supply 360",
     description: "Get an overview report of all the supplies.",
