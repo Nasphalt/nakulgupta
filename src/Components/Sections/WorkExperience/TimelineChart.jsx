@@ -5,6 +5,7 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
+import Typography from "@mui/material/Typography";
 
 export default function TimelineChart({ data, heading, description }) {
   return (
@@ -31,12 +32,16 @@ export default function TimelineChart({ data, heading, description }) {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent
-              sx={{ m: "auto 0" }}
-              align="left"
+              sx={{ py: "12px", px: 2 }}
               variant="body"
               className="text-white"
             >
-              {item.designation}
+              <Typography variant="body" component="span">
+                {item.designation}
+              </Typography>
+              <Typography variant="body2" className="text-gray-300">
+                {item.role}
+              </Typography>
             </TimelineContent>
           </TimelineItem>
         ))}

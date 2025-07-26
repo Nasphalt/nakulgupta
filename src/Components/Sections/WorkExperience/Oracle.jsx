@@ -1,5 +1,5 @@
 import GroupIcon from "@mui/icons-material/Group";
-import LaptopMacIcon from "@mui/icons-material/LaptopMac";
+import PersonIcon from "@mui/icons-material/Person";
 import Groups2Icon from "@mui/icons-material/Groups2";
 import TimelineChart from "./TimelineChart";
 import Skills from "./Skills";
@@ -9,16 +9,19 @@ const oracleCareerPath = [
     date: "September, 2024",
     designation: "IC3 Level 2 | Team Lead",
     icon: <Groups2Icon />,
+    role: "Front-End Web Developer",
   },
   {
     date: "March, 2022",
     designation: "IC3 Level 1 | Senior Software Engineer",
     icon: <GroupIcon />,
+    role: "Front-End Web Developer",
   },
   {
     date: "March, 2020",
     designation: "IC2 Level 2 | Software Engineer",
-    icon: <LaptopMacIcon />,
+    icon: <PersonIcon />,
+    role: "Front-End Web Developer",
   },
 ];
 
