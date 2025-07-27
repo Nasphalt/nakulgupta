@@ -1,4 +1,4 @@
-export default function CompanyHeaders({ activeTab, setActiveTab }) {
+export default function CompanyHeaders({ activeTab, setActiveTab, setCurr }) {
   const data = [
     {
       label: "ORACLE",
@@ -28,7 +28,12 @@ export default function CompanyHeaders({ activeTab, setActiveTab }) {
         >
           <a
             className="flex items-center h-12 w-full text-center justify-center"
-            onClick={() => setActiveTab(id)}
+            onClick={() => {
+              setActiveTab(id);
+              if (id !== activeTab) {
+                setCurr(0);
+              }
+            }}
           >
             <img
               src={image}

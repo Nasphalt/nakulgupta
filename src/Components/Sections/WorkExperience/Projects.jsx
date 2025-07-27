@@ -15,7 +15,9 @@ export default function Projects({ description, projects }) {
             className="flex flex-col bg-neutral-800 p-4 shadow-[2px_2px_5px_rgba(0,0,0,255)]"
           >
             <div className="flex w-full items-center justify-between m-0 p-0">
-              <h4 className="text-white font-semibold">{project.name}</h4>
+              <h4 className="text-white font-semibold text-left">
+                {project.name}
+              </h4>
               <div className="relative group">
                 <button
                   onClick={() => alert(project.name)}

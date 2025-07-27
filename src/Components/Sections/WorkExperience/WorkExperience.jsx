@@ -7,15 +7,21 @@ import { Kony } from "./Kony";
 
 export default function WorkExperience() {
   const [activeTab, setActiveTab] = useState(0);
+  const [curr, setCurr] = useState(0);
   const data = [Oracle, Oceaneering, Kony];
-
   return (
     <div className="w-[90%] sm:w-[85%] md:w-[80%] lg:w-[75%] flex items-center">
       <TabPanel
         headers={
-          <CompanyHeaders activeTab={activeTab} setActiveTab={setActiveTab} />
+          <CompanyHeaders
+            activeTab={activeTab}
+            setActiveTab={setActiveTab}
+            setCurr={setCurr}
+          />
         }
         content={data[activeTab]}
+        setCurr={setCurr}
+        curr={curr}
       />
     </div>
   );

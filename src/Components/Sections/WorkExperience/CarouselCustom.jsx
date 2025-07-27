@@ -9,8 +9,9 @@ export default function CarouselCustom({
   children: slides,
   autoSlide = false,
   autoSlideInterval = 3000,
+  curr,
+  setCurr,
 }) {
-  const [curr, setCurr] = useState(0);
   const touchStartX = useRef(null);
   const touchEndX = useRef(null);
 
