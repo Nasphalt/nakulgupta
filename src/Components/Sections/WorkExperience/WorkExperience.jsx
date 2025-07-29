@@ -10,7 +10,7 @@ export default function WorkExperience() {
   const [curr, setCurr] = useState(0);
   const data = [Oracle, Oceaneering, Kony];
   return (
-    <div className="w-[90%] sm:w-[85%] md:w-[80%] lg:w-[75%] flex items-center">
+    <div className="w-[100%] sm:w-[85%] md:w-[80%] lg:w-[75%] flex items-center">
       <TabPanel
         headers={
           <CompanyHeaders

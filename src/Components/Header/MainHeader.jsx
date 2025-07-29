@@ -12,7 +12,8 @@ export default function MainHeader() {
         download
         className="absolute top-8 right-8 bg-gray-200 text-black px-4 py-2 rounded-lg shadow-[2px_2px_5px_rgba(150,150,150,255)] font-semibold hover:bg-white transition-colors"
       >
-        <FontAwesomeIcon icon={faFileDownload} /> Resume
+        <FontAwesomeIcon icon={faFileDownload} className="pr-0 md:pr-2" />
+        <span className="hidden md:inline-flex">Resume</span>
       </a>
 
       <HeaderInfo />

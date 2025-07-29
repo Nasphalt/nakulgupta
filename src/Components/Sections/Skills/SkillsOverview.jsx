@@ -89,7 +89,7 @@ export default function SkillsOverview() {
       <p className="text-center">
         A snapshot of the skills I've built over the years
       </p>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-16 p-8 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-16 p-8 w-full">
         <StyledRadar
           data={frontendSkillsData}
           colorCode={"#4ade80"}

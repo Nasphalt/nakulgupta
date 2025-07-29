@@ -96,14 +96,14 @@ export default function CarouselCustom({
         </div>
       </div>
       <div
-        className="flex transition-transform ease-out duration-500 p-4"
+        className="flex transition-transform ease-out duration-500 p-0 md:p-4"
         style={{ transform: `translateX(-${curr * 100}%)` }}
       >
         {Array.isArray(slides)
           ? slides.map((child, index) => (
               <div
                 key={index}
-                className="w-[calc(100%-(var(--spacing)*16))] flex-shrink-0 ml-8 mr-16 h-[350px] overflow-y-auto custom-scrollbar"
+                className="w-[calc(100%-(var(--spacing)*16))] flex-shrink-0 ml-8 mr-8 md:mr-16 h-[350px] overflow-y-auto custom-scrollbar"
               >
                 {child}
               </div>

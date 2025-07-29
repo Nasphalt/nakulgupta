@@ -16,15 +16,3 @@
   background-color: #d1d5dc;
   border-radius: 4px;
 }
-
-@media (max-width: 767px) and (orientation: portrait) {
-  .landscape-warning {
-    display: flex;
-  }
-}
-
-@media (orientation: landscape), (min-width: 768px) {
-  .landscape-warning {
-    display: none;
-  }
-}
