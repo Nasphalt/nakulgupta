@@ -27,12 +27,12 @@ const konySkillSet = [
       { name: "JavaScript", icon: "/JavaScript.svg", styling: "" },
       { name: "HTML", icon: "/HTML.svg", styling: "p-1 bg-white" },
       { name: "CSS", icon: "/CSS.svg", styling: "" },
-      { name: "Java", icon: "/Java.svg", styling: "" },
     ],
   },
   {
     type: "Back-End Skills",
     skills: [
+      { name: "Java", icon: "/Java.svg", styling: "" },
       { name: "MySQL", icon: "/MySQL.svg", styling: "" },
       { name: "PostgresSQL", icon: "/PostgresSQL.svg", styling: "" },
       { name: "SQLite", icon: "/SQLite.svg", styling: "" },
