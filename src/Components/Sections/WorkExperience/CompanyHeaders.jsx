@@ -3,18 +3,18 @@ export default function CompanyHeaders({ activeTab, setActiveTab, setCurr }) {
     {
       label: "ORACLE",
       id: 0,
-      image: "/oracle.png",
+      image: "./oracle.png",
     },
     {
       label: "OCEANEERING",
       id: 1,
-      image: "/oceaneering.png",
+      image: "./oceaneering.png",
     },
 
     {
       label: "KONY",
       id: 2,
-      image: "/kony.png",
+      image: "./kony.png",
     },
   ];
 
